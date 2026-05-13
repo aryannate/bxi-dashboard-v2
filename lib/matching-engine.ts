@@ -121,7 +121,7 @@ export function calculateMatchScore(
   score += Math.round(catOverlap * 15);
 
   // AI tag overlap
-  const tagOverlap = semanticOverlap(userProfile.aiTags || [], business.aiTags);
+  const tagOverlap = semanticOverlap(userProfile.aiTags || [], business.aiTags || []);
   score += Math.round(tagOverlap * 10);
 
   // Excess inventory bonus

@@ -9,7 +9,7 @@ export interface Business {
   needs: string[];
   barterCategories: string[];
   inventoryType: string;
-  aiTags: string[];
+  aiTags?: string[];
   excessInventory: string[];
   logo?: string;
   website?: string;
@@ -29,6 +29,7 @@ export interface UserProfile {
   needs: string[];
   barterCategories: string[];
   excessInventory: string[];
+  aiTags?: string[];
   onboardingComplete: boolean;
   createdAt: string;
 }

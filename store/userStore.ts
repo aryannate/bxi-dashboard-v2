@@ -33,7 +33,6 @@ const DEMO_PROFILE: UserProfile = {
   excessInventory: ['Weekday banquet slots (Mon-Thu)', 'Off-season luxury suites (Jun-Aug)', 'Weekday restaurant tables (lunch)'],
   onboardingComplete: true,
   createdAt: new Date().toISOString(),
-  // @ts-ignore - aiTags used by matching engine
   aiTags: ['venue', 'luxury', 'events', 'corporate', 'banquet', 'hospitality'],
 };
 
